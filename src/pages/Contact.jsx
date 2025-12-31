@@ -46,9 +46,17 @@ const Contact = () => {
           {/* INFO */}
           <div className="contact-info">
             <h2>Consultation Details</h2>
-            <p><strong>Phone:</strong> {siteData.phone}</p>
+            <p><strong>Phone:</strong> +91 9600546526</p>
             <p><strong>Email:</strong> {siteData.email}</p>
             <p><strong>Location:</strong> {siteData.location}</p>
+            <a
+              href={`https://wa.me/${siteData.phone}`}
+              target="_blank"
+              rel="noreferrer"
+              className="whatsapp-btn"
+            >
+              Chat on WhatsApp
+            </a>
           </div>
 
           {/* FORM */}
@@ -121,6 +129,16 @@ const Contact = () => {
           max-width: 720px;
           margin: auto;
           line-height: 1.6;
+        }
+                  .whatsapp-btn {
+          display: inline-block;
+          margin-top: 16px;
+          padding: 12px 20px;
+          background: #25d366;
+          color: white;
+          border-radius: 6px;
+          text-decoration: none;
+          font-weight: 600;
         }
 
         .contact-content {
