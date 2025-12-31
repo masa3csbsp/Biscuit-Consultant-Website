@@ -129,7 +129,10 @@ const Home = () => {
               Expert guidance for biscuit manufacturing plants with over{" "}
               {siteData.yearsOfExperience} years of industry experience.
             </p>
-            <a href="/contact" className="btn primary">Get Consultation</a>
+            
+            <Link to="/contact" className="btn primary">
+      Get Consultation
+    </Link>
           </div>
         </section>
 
@@ -189,9 +192,8 @@ const Home = () => {
         <section className="cta">
           <h2>Plan Your Biscuit Plant With Confidence</h2>
           <p>Get expert consulting from concept to commercial production.</p>
-          <a href="/contact" className="btn secondary">Contact Now</a>
+          <Link to="/contact" className="btn secondary">Contact Us Now</Link>
         </section>
-
       </main>
 
       {/* =========================
